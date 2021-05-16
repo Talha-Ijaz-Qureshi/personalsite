@@ -60,8 +60,8 @@
   }
   
   .neon-button::after {
-    content: "";
     position: absolute;
+    content: "";
     top: 0;
     bottom: 0;
     left: 0;
