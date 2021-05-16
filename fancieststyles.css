@@ -1,5 +1,5 @@
 :root {
-    --clr-glow: hsl(317 100% 54%);
+    --clr-glow: hsl(181, 100%, 49%);
     --clr-bg: hsl(323 21% 16%);
     --gradient: linear-gradient(90deg, #f2543f, rgb(30, 0, 225), #f2543f);
 
@@ -11,10 +11,12 @@
     box-sizing: border-box;
   }
   
+
+
   body {
-    min-height: 75vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--clr-bg);
     color: var(--clr-glow);
   }
@@ -22,17 +24,23 @@
   h1 {
     font-family: 'Major Mono Display', monospace; 
     background-image: var(--gradient);
-    background-size: 300%;
-    transition: background-position 0.9s;
+    background-size: 200%;
+    transition: 0.9s;
+    background-position: left;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
   }
+
+  h1:hover {
+    background-position: right;
+  }
   
   .neon-button {
     font-size: 5rem;
-    display: inline-block;
+    justify-content: center;
+    align-items: center;    
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-glow);
@@ -41,9 +49,13 @@
     border-radius: 0.25em;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
     box-shadow: inset 0 0 0.5em 0 var(--clr-glow), 0 0 0.5em 0 var(--clr-glow);
-    position: relative;
     font-family: 'Monoton', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
   
   .neon-button::before {
     pointer-events: none;
@@ -56,7 +68,7 @@
     height: 100%;
     transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
     filter: blur(1em);
-    opacity: 0.7;
+    opacity: 0.5;
   }
   
   .neon-button::after {
@@ -70,7 +82,7 @@
     opacity: 0;
     background-color: var(--clr-glow);
     z-index: -1;
-    transition: opacity 100ms linear;
+    transition: opacity 30ms linear;
   }
   
   .neon-button:hover,
