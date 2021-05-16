@@ -1,6 +1,7 @@
 :root {
-    --clr-glow: hsl(181, 100%, 49%);
-    --clr-bg: hsl(323 21% 16%);
+    --clr-glow: rgb(168, 205, 35);
+    --clr-bg: hsl(323, 21%, 16%);
+    --clr-bgclock: hsl(319, 21%, 20%);
     --gradient: linear-gradient(90deg, #f2543f, rgb(30, 0, 225), #f2543f);
 
   }
@@ -19,9 +20,10 @@
     align-items: center;
     background: var(--clr-bg);
     color: var(--clr-glow);
+    min-height: 100vh;
   }
   
-  h1 {
+  .one {
     font-family: 'Major Mono Display', monospace; 
     background-image: var(--gradient);
     background-size: 200%;
@@ -31,16 +33,53 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    top: 5%;
+    position: absolute;
   }
 
-  h1:hover {
+  .one:hover {
     background-position: right;
   }
-  
+
+  .two {
+    font-family: 'Major Mono Display', monospace; 
+    background-image: var(--gradient);
+    background-size: 200%;
+    transition: 0.9s;
+    background-position: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+  }
+
+  .two:hover {
+    background-position: right;
+  }
+
+  .three {
+    font-family: 'Major Mono Display', monospace; 
+    background-image: var(--gradient);
+    background-size: 200%;
+    transition: 0.9s;
+    background-position: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    top: 70vh;
+  }
+
+  .three:hover {
+    background-position: right;
+  }
+
+ 
+ 
   .neon-button {
-    font-size: 5rem;
-    justify-content: center;
-    align-items: center;    
+    font-size: 3rem;
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-glow);
@@ -51,9 +90,7 @@
     box-shadow: inset 0 0 0.5em 0 var(--clr-glow), 0 0 0.5em 0 var(--clr-glow);
     font-family: 'Monoton', cursive;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25%;
   }
 
   
@@ -100,3 +137,37 @@
     opacity: 1;
   }
   
+
+.clock {
+  width: 300px;
+  height: 300px;
+  top: 97vh;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: var(--clr-bg);
+  background-size: cover;
+  border: 1px solid var(--clr-bgclock);
+  box-shadow: 0 -15px 15px rgb(122, 148, 26, 0.9), 
+              inset 0 -15px 15px rgb(122, 148, 26, 0.4),
+              0 15px 15px rgba(0, 0, 0, 0.8),
+              inset 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Major Mono Display', monospace; 
+}
+
+.glowline {
+  width: 800px;
+  height: 10px;
+  background-color: var(--clr-bgclock);
+  position: absolute;
+  top: 85vh;
+  box-shadow: 0px -5px 5px rgb(200, 243, 45), 
+  0px 5px 5px rgb(200, 243, 45), 
+  10px 0px 30px rgb(200, 243, 45), 
+  -10px 0px 30px rgb(200, 243, 45);
+  border-radius: 5px;
+
+}
