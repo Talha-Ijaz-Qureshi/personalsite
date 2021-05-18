@@ -12,6 +12,39 @@
     box-sizing: border-box;
   }
   
+.knees {
+  font-family: 'Cutive Mono', monospace;  
+  top: 576vh;
+  width: auto;
+  height: auto;
+  line-height: 1.7;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3), 
+  0 15px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 40px;
+}
+
+a {
+  font-family: 'Major Mono Display', monospace; 
+  background-image: var(--gradient);
+  background-size: 200%;
+  transition: 0.9s;
+  background-position: left;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-position: right;
+}
 
 
   body {
@@ -20,7 +53,7 @@
     align-items: center;
     background: var(--clr-bg);
     color: var(--clr-glow);
-    min-height: 100vh;
+    min-height: 595vh;
   }
   
   .one {
@@ -35,6 +68,7 @@
     color: transparent;
     top: 5%;
     position: absolute;
+    text-transform: uppercase;
   }
 
   .one:hover {
@@ -52,6 +86,7 @@
     background-clip: text;
     color: transparent;
     position: absolute;
+    text-transform: uppercase;
   }
 
   .two:hover {
@@ -70,12 +105,33 @@
     color: transparent;
     position: absolute;
     top: 70vh;
+    text-transform: uppercase;
   }
 
   .three:hover {
     background-position: right;
   }
 
+  .four {
+    font-family: 'Major Mono Display', monospace; 
+    background-image: var(--gradient);
+    background-size: 200%;
+    transition: 0.9s;
+    background-position: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    top: 150vh;
+    text-transform: uppercase;
+    }
+
+  .four:hover {
+    background-position: right;
+  }
+
+ 
  
  
   .neon-button {
@@ -138,7 +194,7 @@
   }
   
 
-.clock {
+.name {
   width: 300px;
   height: 300px;
   top: 97vh;  
@@ -170,4 +226,157 @@
   -10px 0px 30px rgb(200, 243, 45);
   border-radius: 5px;
 
+}
+
+.pic1 {
+  width: 300px;
+  height: 300px;
+  top: 170vh;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  content: url(fire.jpg);
+  border: 1px solid var(--clr-bgclock);
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3), 
+              inset 0 -15px 15px rgba(0, 0, 0, 0.5),
+              0 15px 15px rgba(0, 0, 0, 0.9),
+              inset 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Major Mono Display', monospace; 
+}
+
+.pic2 {
+  width: 300px;
+  height: 300px;
+  top: 220vh;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  content: url(lit.jpg);
+  border: 1px solid var(--clr-bgclock);
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3), 
+              inset 0 -15px 15px rgba(0, 0, 0, 0.5),
+              0 15px 15px rgba(0, 0, 0, 0.9),
+              inset 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Major Mono Display', monospace; 
+}
+
+.pic3 {
+  width: 300px;
+  height: 300px;
+  top: 270vh;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  content: url(huh.jpg);
+  border: 1px solid var(--clr-bgclock);
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3), 
+              inset 0 -15px 15px rgba(0, 0, 0, 0.5),
+              0 15px 15px rgba(0, 0, 0, 0.9),
+              inset 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Major Mono Display', monospace; 
+}
+
+.pic4 {
+  width: 300px;
+  height: 300px;
+  top: 320vh;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  content: url(blaki.jpeg);
+  border: 1px solid black;
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3), 
+              inset 0 -15px 15px rgba(0, 0, 0, 0.5),
+              0 15px 15px rgba(0, 0, 0, 0.9),
+              inset 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Major Mono Display', monospace; 
+}
+
+.pic5 {
+  width: 300px;
+  height: 300px;
+  top: 370vh;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  content: url(whit.jpeg);
+  border: 1px solid var(--clr-bgclock);
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3), 
+              inset 0 -15px 15px rgba(0, 0, 0, 0.5),
+              0 15px 15px rgba(0, 0, 0, 0.9),
+              inset 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Major Mono Display', monospace; 
+}
+
+
+.pic6 {
+  width: 300px;
+  height: 300px;
+  top: 420vh;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  content: url(newblaki.jpg);
+  border: 1px solid black;
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3), 
+              inset 0 -15px 15px rgba(0, 0, 0, 0.5),
+              0 15px 15px rgba(0, 0, 0, 0.9),
+              inset 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Major Mono Display', monospace; 
+}
+
+.pic7 {
+  width: 300px;
+  height: 300px;
+  top: 470vh;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  content: url(newwhit.png);
+  border: 1px solid black;
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3), 
+              inset 0 -15px 15px rgba(0, 0, 0, 0.5),
+              0 15px 15px rgba(0, 0, 0, 0.9),
+              inset 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Major Mono Display', monospace; 
+}
+
+.pic8 {
+  width: 300px;
+  height: 300px;
+  top: 520vh;  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  content: url(amogus.jpg);
+  border: 1px solid black;
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3), 
+              inset 0 -15px 15px rgba(0, 0, 0, 0.5),
+              0 15px 15px rgba(0, 0, 0, 0.9),
+              inset 0 15px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Major Mono Display', monospace; 
 }
