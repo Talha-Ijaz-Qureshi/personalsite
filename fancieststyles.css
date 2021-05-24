@@ -2,7 +2,7 @@
     --clr-glow: rgb(168, 205, 35);
     --clr-bg: hsl(323, 21%, 16%);
     --clr-bgclock: hsl(319, 21%, 20%);
-    --gradient: linear-gradient(90deg, #f2543f, rgb(30, 0, 225), #f2543f);
+    --gradient: linear-gradient(90deg, #f2543f, rgb(45, 19, 211), #f2543f);
 
   }
   
@@ -32,8 +32,8 @@
 a {
   font-family: 'Major Mono Display', monospace; 
   background-image: var(--gradient);
-  background-size: 200%;
-  transition: 0.9s;
+  background-size: 170%;
+  transition: 0.3s;
   background-position: left;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -59,7 +59,7 @@ a:hover {
   .one {
     font-family: 'Major Mono Display', monospace; 
     background-image: var(--gradient);
-    background-size: 200%;
+    background-size: 170%;
     transition: 0.9s;
     background-position: left;
     -webkit-background-clip: text;
@@ -78,7 +78,7 @@ a:hover {
   .two {
     font-family: 'Major Mono Display', monospace; 
     background-image: var(--gradient);
-    background-size: 200%;
+    background-size: 170%;
     transition: 0.9s;
     background-position: left;
     -webkit-background-clip: text;
@@ -96,7 +96,7 @@ a:hover {
   .three {
     font-family: 'Major Mono Display', monospace; 
     background-image: var(--gradient);
-    background-size: 200%;
+    background-size: 170%;
     transition: 0.9s;
     background-position: left;
     -webkit-background-clip: text;
@@ -115,7 +115,7 @@ a:hover {
   .four {
     font-family: 'Major Mono Display', monospace; 
     background-image: var(--gradient);
-    background-size: 200%;
+    background-size: 170%;
     transition: 0.9s;
     background-position: left;
     -webkit-background-clip: text;
