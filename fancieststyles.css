@@ -216,7 +216,7 @@ a:hover {
 }
 
 .glowline {
-  width: 800px;
+  width: 90%;
   height: 10px;
   background-color: var(--clr-bgclock);
   position: absolute;
