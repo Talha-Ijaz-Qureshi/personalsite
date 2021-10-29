@@ -50,7 +50,6 @@ a:hover {
   body {
     display: flex;
     justify-content: center;
-    align-items: center;
     background: var(--clr-bg);
     color: var(--clr-glow);
     min-height: 595vh;
@@ -380,4 +379,65 @@ a:hover {
   border-radius: 50%;
   position: absolute;
   font-family: 'Major Mono Display', monospace; 
+}
+
+/*      <h1 class="one">HOVER  DA  MOUSE  ON  DA  BUTTON</h1>
+    <p class="neon-button">less glow</p>
+    <h1 class="three">Static 3D</h1>
+    <div class="name">
+        <h1 class="two">TALHA</h1>
+    </div>
+    <div class="glowline"></div>
+    <h1 class="four">My dumb creations</h1>
+    <!-- needed later so for now each is separatly identified-->
+    <div class="pic1"></div>
+    <div class="pic2"></div>
+    <div class="pic3"></div>
+    <div class="pic4"></div>
+    <div class="pic5"></div>
+    <div class="pic6"></div>
+    <div class="pic7"></div>
+    <div class="pic8"></div>
+    <div class="knees">
+        <h1> Only dumb suggestions and ideas needed, contact <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muhammadtalhaijaz.19479.10b@gmail.com&su=I came from your awesome website talha!" target="_blank">me </a></h1>
+    </div>
+
+    */
+
+.sidebarprop {
+  width: 23vw; 
+  height: 47vw;
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  border-radius: 10px;
+  border-color: 1px black;
+  box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
+}
+
+.sidebarprop::before {
+  content: '';
+  width: 23vw; 
+  height: 47vw;
+  position: absolute;
+  border-radius: 10px;
+  border-color: 1px black;
+  box-shadow: inset 0 0 2000px black;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+li {
+  position: relative;
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+  left: -20px;
+}
+
+.barbuttons {
+  font-size: 29px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px 10px 10px 10px;
+  color: aliceblue;
 }
