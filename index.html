@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="ok.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -15,13 +17,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Monoton&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet"> 
     <title>Talha's Personal Site</title>
-    <link rel="stylesheet" href="ausstyles.css"/>
+    <link rel="stylesheet" href="fancieststyles.css"/>
 </head>
 <body>
 <div class="header">
 
 </div>
+<!--
+
+<div class="blockquote border quote text">
+    We pledge to encourage team spirit and promote positivity amongst students.
+
+</div>
     <h1>Exhibition</h1>
+
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Nunc id cursus metus aliquam eleifend mi in.</p>
     <h2>Categories</h2>
     <div class="propbox">
@@ -31,9 +40,13 @@
         <div class="categ" style="margin-right: 200px;"></div>
         <div class="categ" style="margin-left: 200px;"></div>    
     </div>
-<!-- just adding for sorting -->
+ just adding for sorting 
     <div class="sidebarprop">
-        <ul>
+        <p class="text">We pledge to encourage team spirit and promote positivity amongst students.
+</p>
+    </div>
+
+            <ul>
             <li>
                 <div class="barbuttons">
                     <button class="testbtn1">
@@ -56,6 +69,40 @@
                 </div>
             </li>
         </ul>
+Act One-->
+
+<!--
+<h1 class="one">HOVER  DA  MOUSE  ON  DA  BUTTON</h1>
+    <p class="neon-button">av</p>
+    <h1 class="three">Static 3D</h1>
+    <div class="name">
+        <h1 class="two">TALHA</h1>
     </div>
+    <div class="glowline"></div>
+    <h1 class="four">My dumb creations</h1>
+    <div class="pic1"></div>
+    <div class="pic2"></div>
+    <div class="pic3"></div>
+    <div class="pic4"></div>
+    <div class="pic5"></div>
+    <div class="pic6"></div>
+    <div class="pic7"></div>
+    <div class="pic8"></div>
+    <div class="knees">
+        <h1> Only dumb suggestions and ideas needed, contact <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muhammadtalhaijaz.19479.10b@gmail.com&su=I came from your awesome website talha!" target="_blank">me </a></h1>
+    </div>
+Act Two-->
+
+<div class="two">do not hover, and click the round thing below, its shy<br>Firefox exclusive :(</div>
+<div class="glowline"></div>
+<div id="pointer"></div>
+<div class="head">😩</div>
+
 </body>
+<script>
+    const pointer = document.getElementById("pointer")
+    document.onmousemove = (e)=>{
+        pointer.setAttribute("style", `top: ${e.pageY}px; left: ${e.pageX}px`)
+    }
+</script>
 </html>
