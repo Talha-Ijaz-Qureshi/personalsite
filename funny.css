@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --smooth-anim: cubic-bezier(0.2, 0, 0.001, 1);
+    --green: #a8cd23;
+    --bruh-purple: #4c1140;
+    --res-grey: #434343;
+    --big-padding: calc(.200em + 1vw);
+    --small-padding: calc(.07em + .5vw);
+}
+
+
+*::-moz-selection {
+    color: #4c1140;
+    background-color: #a8cd23;
+}
+  
+  *::selection {
+    color: #4c1140;
+    background-color: #a8cd23;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    max-height: fit-content;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+footer {
+    height: fit-content;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 2em;
+    border-top: 0.05em white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h4 {
+    margin-right: auto;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+footer img  {
+    width: 2em;
+    margin: 1em;
+}
+
+
+.mainLogo {
+    width: 10em;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+.subheading {
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    background-color: white;
+    font-size: calc(1.1em + .4vw);
+    margin: 1em auto 1em -1em;
+    padding: calc(.07em + .5vw) calc(.07em + .5vw) calc(.07em + .5vw) 2em;
+}
+
+h1 {
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    background-color: white;
+    font-size: calc(1.1em + .4vw);
+    margin: 1em;
+    padding: 1em;
+}
+
+h2 {
+    font-family: "Press Start 2P", cursive;
+    color: white;
+    font-size: 2em;
+    margin: 1em;
+    text-align: center;
+}
+
+
+h3 {
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    background-color: white;
+    font-size: 1em;
+    margin: 1em 1em 0em 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+
+h4 {
+    font-family: "Press Start 2P", cursive;
+    color: white;
+    font-size: 1em;
+    margin: 1em;
+    text-align: left;
+}
+
+h5 {
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    background-color: white;    
+    font-size: .7em;
+    padding: .7em;
+    margin: 1em;
+}
+
+h6 {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0em 1em 1em 1em;
+    border: white .05em solid;
+    border-top: none;
+    padding: 1em;
+    font-size: 1em;
+}
+
+p {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    margin: 1em;
+    border: white .05em solid;
+    padding: 1em;
+}
+
+.title {
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    background-color: white;
+    font-size: calc(1.5em + 1.6vw);
+    margin: 1em;
+    text-align: center;
+    padding: calc(.200em + .5vw);
+}
+
+.aboutTal {
+    min-width: 50%;
+    height: fit-content;
+    padding: 0.5em;
+    border: white .05em solid;
+    margin: 1em;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.card {
+    border: white .05em solid;
+    padding: 2em;
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card h6 {
+    font-weight: 400;
+}
+
+
+.link {
+    width: 113%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.bruhcorp, .sauron {
+    padding: .6em;
+    width: fit-content;
+    color: #a8cd23;
+    transition-duration: 150ms;
+    border-radius: .2em;
+    font-family: "Press Start 2P", cursive;
+    font-size: 2.5em;
+    color: #a8cd23;
+    text-align: center;
+    text-decoration: none;
+    line-height: 120%;
+    background-color: #4c1140;
+    user-select: none;
+}
+
+.sauron {
+    color: #FECD17;
+    font-size: 2em;
+    background-color: transparent;
+}
+
+
+.bruhcorp:hover, .sauron:hover {
+    transition-duration: 120ms;
+    transform: scale(1.04);
+    text-shadow: black 0.6px 0.6px 1.2px, #a8cd23 1.2px 1.2px 1.2px, black 3.6px 3.6px 1.2px, #a8cd23 4.8px 4.8px 1.2px, black 6px 6px 1.2px, #a8cd23 7.2px 7.2px 1.2px;
+    background-color: #4c1140;
+}
+
+
+.sauron:hover {
+    text-shadow: black 0.6px 0.6px 1.2px, 
+    #FECD17 1.2px 1.2px 1.2px, 
+    black 3.6px 3.6px 1.2px, 
+    #FECD17 4.8px 4.8px 1.2px, 
+    black 6px 6px 1.2px, 
+    #FECD17 7.2px 7.2px 1.2px;
+    background-color: transparent;
+}
+
+.bruhcorp:active {
+    background-color: #310b22;
+}
+
+.sandr  {
+    width: 12em;
+    margin: -2em;
+}
+
+.eosimg {
+    width: 12em;
+    margin: -2em;
+}
