@@ -55,7 +55,7 @@ footer h4 {
 
 footer img  {
     width: 2em;
-    margin: 1em;
+    margin: .5em;
 }
 
 
@@ -70,8 +70,16 @@ footer img  {
     color: black;
     background-color: white;
     font-size: calc(1.1em + .4vw);
-    margin: 1em auto 1em -1em;
-    padding: calc(.07em + .5vw) calc(.07em + .5vw) calc(.07em + .5vw) 2em;
+    margin: 2em auto 1em -1em;
+    padding: calc(.07em + .5vw) calc(.07em + .5vw) calc(.07em + .5vw) 4em;
+}
+
+li {
+    list-style-type: "<> ";
+}
+
+.wellbeing  {
+    list-style-type: decimal; /* Use decimal numbering for ordered list */
 }
 
 h1 {
@@ -120,6 +128,10 @@ h5 {
     margin: 1em;
 }
 
+h4, h5 {
+    line-height: 150%;
+}
+
 h6 {
     color: white;
     font-family: 'Roboto Mono', monospace;
@@ -149,14 +161,14 @@ p {
 }
 
 .aboutTal {
-    min-width: 50%;
+    min-width: 40%;
     height: fit-content;
     padding: 0.5em;
     border: white .05em solid;
     margin: 1em;
 }
 
-.projects {
+.flexbox.projects {
     display: flex;
     justify-content: center;
     align-items: self-start;
@@ -168,17 +180,26 @@ p {
 .card {
     border: white .05em solid;
     padding: 2em;
-    width: 15em;
+    width: 17em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 1em;
 }
 
 .card h6 {
     font-weight: 400;
+    width: 15.85em;
 }
 
+.card h3 {
+    width: 16em;
+}
+
+.card p {
+    width: 16em;
+}
 
 .link {
     width: 113%;
@@ -192,7 +213,15 @@ p {
     font-weight: 900;
 }
 
-.link:hover {
+.linkbox {
+    text-decoration: none;
+}
+
+.linkbox h6 {
+    font-weight: 400;
+}
+
+.link:hover, .linkbox:hover {
     text-decoration: underline;
 }
 
@@ -210,12 +239,14 @@ p {
     line-height: 120%;
     background-color: #4c1140;
     user-select: none;
+    margin: .5em;
 }
 
 .sauron {
     color: #FECD17;
     font-size: 2em;
     background-color: transparent;
+    margin: 0;
 }
 
 
@@ -249,4 +280,18 @@ p {
 .eosimg {
     width: 12em;
     margin: -2em;
+}
+
+.flexbox.ass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flexbox.ass img {
+    margin: 1em;
+    width: 5em;
+    border: white .05em solid;
 }
