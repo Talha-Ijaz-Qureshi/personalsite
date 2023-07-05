@@ -214,14 +214,14 @@ p {
 }
 
 .linkbox {
-    text-decoration: none;
+    text-decoration-color: white;
 }
 
 .linkbox h6 {
     font-weight: 400;
 }
 
-.link:hover, .linkbox:hover {
+.link:hover {
     text-decoration: underline;
 }
 
