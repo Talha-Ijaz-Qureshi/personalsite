@@ -48,7 +48,9 @@ body {
 }
 
 .source p {
-    font-size: .7em;
+    font-size: 1em;
+    padding: .5em;
+    font-family: "Press Start 2P", cursive;
 }
 
 footer {
