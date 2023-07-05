@@ -30,6 +30,27 @@ body {
     margin: 0;
 }
 
+.source {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.source a {
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.source a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+
+}
+
+.source p {
+    font-size: .7em;
+}
+
 footer {
     height: fit-content;
     padding: 1em;
@@ -40,6 +61,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 footer h4 {
@@ -294,4 +316,54 @@ p {
     margin: 1em;
     width: 5em;
     border: white .05em solid;
+}
+
+.flexbox.flexcolor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.colorbox {
+    color: white;
+    margin: 1em;
+    width: 10em;
+}
+
+.colorbox {
+    border: white .05em solid;
+}
+
+.colorbox h6 {
+    margin: 0;
+    text-align: center;
+    border: white .05em solid;
+}
+
+.colors {  
+    height: 3em;
+    width: 100%;
+}
+
+.heritage {
+    background-image: linear-gradient(to right, 
+    #31202B    20%, 
+    #A8CD23  50%, 
+    #f2543f   50%, 
+    #2d13d3 85%, 
+    #2d13d3 100%);  
+}
+
+.lapis {
+    background-image: linear-gradient(45deg, #004786, #031F99);
+}
+
+.bc {
+    background-image: linear-gradient(to right, #4C1140 40%, #A8CD23);
+}
+
+.classic {
+    background-image: linear-gradient(to right, black 40%, white);
 }
