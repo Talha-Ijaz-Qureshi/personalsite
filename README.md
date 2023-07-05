@@ -1,2 +1,2 @@
 # Welcome to My playground.
-This is my personal website, you'll find information about me.
+I'm tal and is my personal website, you'll find information about me. Enjoy.
