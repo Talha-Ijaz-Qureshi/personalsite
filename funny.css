@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('./somestuff/Mona Sans/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('./somestuff/Mona Sans/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+  
+
 :root {
     --smooth-anim: cubic-bezier(0.2, 0, 0.001, 1);
     --green: #a8cd23;
@@ -21,13 +31,31 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     max-height: fit-content;
     flex-direction: column;
     overflow-x: hidden;
     margin: 0;
+}
+
+#blurbox {
+    position: absolute;
+    width: 100%;
+    height: 500%;
+    z-index: 100;
+    transition: .5s cubic-bezier(0.8, 0, 0.2, 1);
+    opacity: 1;
+    -moz-backdrop-filter: blur(2em);
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+}
+
+#blurbox.hidden {
+    -moz-backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
 }
 
 .source {
@@ -84,9 +112,11 @@ footer img  {
 
 
 .mainLogo {
-    width: 10em;
+    width: 30em;
     margin: 1em;
     margin-bottom: 0;
+    z-index: 100;
+    transition: .5s cubic-bezier(0.8, 0, 0.2, 1);
 }
 
 .subheading {
@@ -103,7 +133,7 @@ li {
 }
 
 .wellbeing  {
-    list-style-type: decimal; /* Use decimal numbering for ordered list */
+    list-style-type: decimal; 
 }
 
 h1 {
@@ -368,4 +398,33 @@ p {
 
 .classic {
     background-image: linear-gradient(to right, black 40%, white);
+}
+
+.synaptic {
+    font-family: 'Mona Sans';
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.synaptic header {
+    color: white;
+    line-height: 75%;
+    text-shadow: black .001em .001em .07em;
+    font-weight: 900;
+    font-stretch: 125%;
+    transform: skew(-10deg);
+    margin: 0;
+    -webkit-text-stroke: .0007em black;
+    margin: 1em;
+    font-size: 2.11em;
+    margin: 0;
+}
+
+.synaptic img {
+    width: 10em;
+    border-radius: .5em;
+    margin-bottom: -3.1em;
 }
