@@ -50,6 +50,7 @@ body {
     -moz-backdrop-filter: blur(2em);
     -webkit-backdrop-filter: blur(2em);
     backdrop-filter: blur(2em);
+    background-color: #00000080;
 }
 
 #blurbox.hidden {
@@ -112,7 +113,8 @@ footer img  {
 
 
 .mainLogo {
-    width: 30em;
+    width: 10em;
+    transform: scale(4.5) translateY(40%);
     margin: 1em;
     margin-bottom: 0;
     z-index: 100;
@@ -427,4 +429,10 @@ p {
     width: 10em;
     border-radius: .5em;
     margin-bottom: -3.078em;
+}
+
+@media only screen and (max-width: 768px) {
+    .mainLogo {
+        transform: scale(3.4) translateY(50%);
+    }
 }
