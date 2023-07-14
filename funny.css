@@ -407,6 +407,10 @@ p.theme3 {
     gap: 3em;
 }
 
+.iazeem {
+    opacity: .6;
+}
+
 .card.theme1 {
     border: .14em #A8CD23 solid;
     border-radius: .3em;
