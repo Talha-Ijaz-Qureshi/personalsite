@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @font-face {
     font-family: 'Mona Sans';
     src:
@@ -9,6 +9,9 @@
     font-stretch: 75% 125%;
 }
   
+* {
+    transition: 300ms;
+}
 
 :root {
     --smooth-anim: cubic-bezier(0.2, 0, 0.001, 1);
@@ -39,6 +42,43 @@ body {
     overflow-x: hidden;
     margin: 0;
 }
+
+body.theme1 {
+    background-color: #31202B;
+}
+
+body.theme2WORKING-ON-IT {
+    background-image: linear-gradient(to bottom, #004786, #031F99);
+}
+
+body.theme3 {
+    background-color: #4c1140;
+}
+
+*.theme3 {
+    color: #A8CD23;
+}
+
+
+h6.themeButton {
+    font-family: "Press Start 2P", cursive;
+    background-color: white;
+    color: black;
+    font-size: .6em;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.themeButton:hover {
+    text-decoration: underline;
+    cursor: grab;
+}
+
+.themeButton:active{
+    background-color: black;
+    color: white;
+}
+
 
 #blurbox {
     position: absolute;
@@ -82,6 +122,15 @@ body {
     font-family: "Press Start 2P", cursive;
 }
 
+.source p.theme1 {
+    color: #A8CD23;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em 0em #A8CD23;
+}
+
+.source.theme3 {
+    color: #A8CD23;
+}
+
 footer {
     height: fit-content;
     padding: 1em 0 1em 0;
@@ -99,6 +148,21 @@ footer h4 {
     margin-right: auto;
 }
 
+footer.theme1 {
+    border-top: 0.05em #A8CD23 solid;
+}
+
+footer h4.theme1 {
+    color: #A8CD23;
+}
+
+footer.theme3 {
+    border: none;
+    background-color: #310b22;
+    box-shadow: #310b22 0px -.5em 1em 0;
+    
+}
+
 .contacts {
     display: flex;
     justify-content: center;
@@ -111,7 +175,6 @@ footer img  {
     margin: .5em;
 }
 
-
 .mainLogo {
     width: 10em;
     transform: scale(4.5) translateY(40%);
@@ -121,6 +184,7 @@ footer img  {
     transition: .5s cubic-bezier(0.8, 0, 0.2, 1);
 }
 
+
 .subheading {
     font-family: "Press Start 2P", cursive;
     color: black;
@@ -128,6 +192,31 @@ footer img  {
     font-size: calc(1.1em + .4vw);
     margin: 2em auto 1em -1em;
     padding: calc(.07em + .5vw) calc(.07em + .5vw) calc(.07em + .5vw) 4em;
+}
+
+.subheading.theme1 {
+    background-image: linear-gradient(to right, #f2543f, #2d13d3);
+    -webkit-background-clip: text;
+    font-family: 'Major Mono Display', monospace;
+    -webkit-text-fill-color: transparent;
+    border: .14em #A8CD23 solid;
+    background-size: 150%;
+    background-position: left;
+    border-radius: .3em;
+    transition: 200ms;
+    font-weight: 900;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em 0em #A8CD23;
+}
+
+.subheading.theme1:hover {
+    background-position: right;
+}
+
+.subheading.theme3 {
+    background-color: #310b22;
+    color: #FECD17;
+    border-radius: .2em;
+    box-shadow: #00000042 9px 9px 10px;
 }
 
 li {
@@ -151,6 +240,10 @@ h2 {
     text-align: center;
 }
 
+h2.theme1 {
+    color: #A8CD23;
+    text-shadow: 0 0 .3em #A8CD23;
+}
 
 h3 {
     font-family: "Press Start 2P", cursive;
@@ -162,6 +255,20 @@ h3 {
     text-align: center;
 }
 
+h3.theme3 {
+    background-color: #310b22;
+    border-radius: .3em;
+    color: #FECD17;
+}
+
+h3.theme1 {
+    background-image: linear-gradient(to right, #f2543f, #2d13d3);
+    color: #A8CD23;
+    text-shadow: 0 0 .5em black;
+    border: .05em #A8CD23 solid;
+    border-bottom: none;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em 0em #A8CD23;
+}
 
 h4 {
     font-family: "Press Start 2P", cursive;
@@ -194,6 +301,18 @@ h6 {
     font-size: 1em;
 }
 
+h6.theme3 {
+    color: #A8CD23;
+    border: none;
+}
+
+h6.theme1 {
+    color: #A8CD23;
+    text-shadow: .1em .1em .2em black;
+    border: #A8CD23  .05em solid;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em 0em #A8CD23;
+}
+
 p {
     color: white;
     font-family: 'Roboto Mono', monospace;
@@ -201,6 +320,21 @@ p {
     border: white .05em solid;
     padding: 1em;
     font-size: 1em;
+}
+
+p.theme1 {
+    border: #A8CD23 .05em solid;
+    color: #A8CD23;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em 0em #A8CD23;
+}
+
+p.theme3 {
+    border: none;
+    background-color: #310b22;
+    border-radius: .3em;
+    color: #A8CD23;
+    font-weight: 500;
+    box-shadow: #00000042 9px 9px 10px;
 }
 
 .title {
@@ -213,6 +347,27 @@ p {
     padding: calc(.200em + .5vw);
 }
 
+.title.theme1 {
+    background-color: transparent;
+    color: #A8CD23;
+    border: .14em #A8CD23 solid;
+    border-radius: .3em;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em 0em #A8CD23;
+}
+
+.title.theme1:hover {
+    background-color: #A8CD23;
+    color: #31202B;
+    cursor:auto;
+}
+
+.title.theme3 {
+    background-color: #310b22;
+    color: #A8CD23;
+    border-radius: .3em;
+    box-shadow: #00000042 9px 9px 10px;
+}
+
 .aboutTal {
     min-width: 30%;
     height: fit-content;
@@ -221,8 +376,26 @@ p {
     margin: 1em;
 }
 
+.aboutTal.theme1 {
+    border: #A8CD23 .05em solid;
+    border-radius: .3em;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em #A8CD23;
+}
+
+.aboutTal.theme3 {
+    border: none;
+    background-color: #310b22;
+    border-radius: .3em;
+    box-shadow: #00000042 9px 9px 10px;
+}
+
 .aboutTal > h2 {
     font-size: 1em;
+}
+
+.aboutTal h6.theme3 {
+    background-color: #a8cd2321;
+    border-radius: .3em;
 }
 
 .flexbox.projects {
@@ -232,6 +405,12 @@ p {
     width: 100%;
     flex-wrap: wrap;
     gap: 3em;
+}
+
+.card.theme1 {
+    border: .14em #A8CD23 solid;
+    border-radius: .3em;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em #A8CD23;
 }
 
 .card {
@@ -245,9 +424,22 @@ p {
     margin: 1em 0 1em 0;
 }
 
+.card.theme3 {
+    background-color: #310b22;
+    border: none;
+    border-radius: .3em;
+    box-shadow: #00000042 9px 9px 10px;
+}
+
 .card h6 {
     font-weight: 400;
     width: 15.85em;
+}
+
+.card h6.theme3 {
+    font-weight: 500;
+    background-color: #a8cd2321;
+    border-radius: .3em;
 }
 
 .card h3 {
@@ -256,7 +448,14 @@ p {
 
 .card p {
     width: 16em;
+    box-shadow: none;
 }
+
+.card p.theme3 {
+    background-color: #a8cd2321;
+    border-radius: .3em;
+}
+
 
 .link {
     width: 113%;
@@ -268,6 +467,29 @@ p {
     font-size: 1em;
     text-decoration: none;
     font-weight: 900;
+}
+
+a.theme1 {
+    background-color: #A8CD23;
+}
+
+a.theme3 {
+    background-color: #a8cd232d;
+    font-family: "Press Start 2P", cursive;
+    color: #FECD17;
+    text-shadow: .1em .1em .2em black;
+}
+
+.card > a.theme3 {
+    width: 111.5%;
+}
+
+.linkbox.theme3 {
+    background-color: #310b22;
+    padding: 0;
+    border-radius: .3em;
+    text-decoration-color: #A8CD23;
+    margin-top: -10px;
 }
 
 .linkbox {
@@ -351,6 +573,19 @@ p {
     margin: 1em;
     width: 5em;
     border: white .05em solid;
+    background-color: black;
+}
+
+.ass img.theme1 {
+    border: .14em #A8CD23 solid;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em #A8CD23;
+}
+
+.ass img.theme3 {
+    border: none;
+    box-shadow: #00000042 9px 9px 10px;
+    background-color: #310b22;
+    border-radius: .3em;
 }
 
 .flexbox.flexcolor {
@@ -371,10 +606,42 @@ p {
     border: white .05em solid;
 }
 
+.colorbox h6.theme1 {
+    border: .14em #A8CD23 solid;
+}
+
+.colorbox.theme1 {
+    border: .14em #A8CD23 solid;
+    box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em #A8CD23;
+}
+
+
+.colorbox.theme3 {
+    border: none;
+    padding: .3em;
+    background-color: #310b22;
+    border-radius: .3em;
+    box-shadow: #00000042 9px 9px 10px;
+}
+
 .colorbox h6 {
     margin: 0;
     text-align: center;
     border: white .05em solid;
+}
+
+.colorbox h6.theme3 {
+    border: none;
+}
+
+.themeButton.theme1 {
+    background-color: transparent;
+}
+
+.themeButton.theme3 {
+    background-color: #a8cd232c;
+    color: #FECD17;
+    text-shadow: .1em .1em .2em black;
 }
 
 .colors {  
@@ -402,6 +669,39 @@ p {
 .classic {
     background-image: linear-gradient(to right, black 40%, white);
 }
+
+.contacts.theme1 {
+    background-color: #A8CD23;
+}
+
+.contacts.theme3 {
+    background-color: #310b22;
+    border-radius: .3em;
+}
+
+.contacts a.theme3 {
+    background-color: transparent;
+}
+
+.contacts h5.theme1 {
+    background-color: transparent;
+}
+
+.contacts h5.theme3 {
+    background-color: transparent;
+    color: #FECD17;
+    text-shadow: .1em .1em .2em black;
+}
+
+
+footer h4.theme3 {
+    background-color: #310b22;
+    color: #A8CD23;
+    padding: .5em;
+    border-radius: .3em;
+    text-shadow: .1em .1em .2em black;
+}
+
 
 .synaptic {
     font-family: 'Mona Sans';
