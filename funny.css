@@ -671,6 +671,16 @@ a.theme3 {
     background-image: linear-gradient(to right, #4C1140 40%, #A8CD23);
 }
 
+.yoasobi {
+    background-image: linear-gradient(to right,
+    #F55875 0%,
+    #F55875 33.33%,
+    #8CEBEE 33.33%,
+    #8CEBEE 66.66%,
+    #36748D 66.66%,
+    #36748D 100%);
+}
+
 .classic {
     background-image: linear-gradient(to right, black 40%, white);
 }
