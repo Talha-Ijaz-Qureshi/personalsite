@@ -60,6 +60,10 @@ body.theme3 {
 }
 
 
+body.theme4 {
+    background-color: #FF0567;
+}
+
 h6.themeButton {
     font-family: "Press Start 2P", cursive;
     background-color: white;
@@ -163,6 +167,12 @@ footer.theme3 {
     
 }
 
+footer.theme4 {
+    background-color: #3A90A1;
+    border: none;
+    box-shadow: 0em -.5em .5em 0em #00000019;
+}
+
 .contacts {
     display: flex;
     justify-content: center;
@@ -183,7 +193,6 @@ footer img  {
     z-index: 100;
     transition: .5s cubic-bezier(0.8, 0, 0.2, 1);
 }
-
 
 .subheading {
     font-family: "Press Start 2P", cursive;
@@ -219,6 +228,16 @@ footer img  {
     box-shadow: #00000042 9px 9px 10px;
 }
 
+.subheading.theme4 {
+    box-shadow: #00000042 9px 9px 10px;
+    background-image: linear-gradient(to left, #8CEAEB, #3A90A1);
+    border-radius: .5em;
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #123a42;
+}
+
 li {
     list-style-type: "<> ";
 }
@@ -245,6 +264,10 @@ h2.theme1 {
     text-shadow: 0 0 .3em #A8CD23;
 }
 
+h2.theme4 {
+    color: #123a42;
+}
+
 h3 {
     font-family: "Press Start 2P", cursive;
     color: black;
@@ -268,6 +291,12 @@ h3.theme1 {
     border: .05em #A8CD23 solid;
     border-bottom: none;
     box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em 0em #A8CD23;
+}
+
+h3.theme4 {
+    color: #8CEAEB;
+    background-color: #123a429e;
+    border-radius: .5em;
 }
 
 h4 {
@@ -311,6 +340,14 @@ h6.theme1 {
     text-shadow: .1em .1em .2em black;
     border: #A8CD23  .05em solid;
     box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em 0em #A8CD23;
+    
+}
+
+h6.theme4 {
+    color: #F55875;
+    text-shadow: .05em .05em .1em black;
+    border: none;
+    font-weight: 400;
 }
 
 p {
@@ -335,6 +372,17 @@ p.theme3 {
     color: #A8CD23;
     font-weight: 500;
     box-shadow: #00000042 9px 9px 10px;
+}
+
+p.theme4 {
+    color: #8CEBEE;
+    font-weight: 500;
+    border: none;
+    padding: 0;
+    background-color: #69012b78;
+    padding: .5em;
+    border-radius: .5em;
+    border: #70002d45 .1em solid;    
 }
 
 .title {
@@ -368,6 +416,13 @@ p.theme3 {
     box-shadow: #00000042 9px 9px 10px;
 }
 
+.title.theme4 {
+    background-image: linear-gradient(to left, #8CEAEB, #3A90A1);
+    border-radius: .7em;
+    color: #0f4c58;
+    box-shadow: #00000042 9px 9px 10px;
+}
+
 .aboutTal {
     min-width: 30%;
     height: fit-content;
@@ -386,6 +441,13 @@ p.theme3 {
     border: none;
     background-color: #310b22;
     border-radius: .3em;
+    box-shadow: #00000042 9px 9px 10px;
+}
+
+.aboutTal.theme4 {
+    background-image: linear-gradient(to bottom, #8CEAEB, #3A90A1);
+    border: .2em solid #36748D;
+    border-radius: 2em;
     box-shadow: #00000042 9px 9px 10px;
 }
 
@@ -446,6 +508,10 @@ p.theme3 {
     border-radius: .3em;
 }
 
+.card h6.theme4 {
+    margin-bottom: 0;
+}
+
 .card h3 {
     width: 16em;
 }
@@ -458,6 +524,13 @@ p.theme3 {
 .card p.theme3 {
     background-color: #a8cd2321;
     border-radius: .3em;
+}
+
+.card.theme4 {
+    background-image: linear-gradient(to bottom, #8CEAEB, #3A90A1);
+    border: .2em solid #36748D;
+    border-radius: 2em;
+    box-shadow: #00000042 9px 9px 10px;
 }
 
 
@@ -484,9 +557,23 @@ a.theme3 {
     color: #FECD17;
     text-shadow: .1em .1em .2em black;
 }
-
 .card > a.theme3 {
     width: 111.5%;
+}
+
+a.theme4 {
+    color: #8CEAEB;
+    background-color: #123a429e;
+    border-radius: .5em;
+}
+
+
+.card > a.theme4 {
+    width: fit-content;
+}
+
+.linkbox {
+    text-decoration-color: white;
 }
 
 .linkbox.theme3 {
@@ -497,12 +584,25 @@ a.theme3 {
     margin-top: -10px;
 }
 
-.linkbox {
-    text-decoration-color: white;
+.linkbox.theme4 {
+    border-radius: 0em 0em .5em .5em;
+}
+
+
+.linkbox,theme4 {
+    text-decoration-color: #8CEBEE;
 }
 
 .linkbox h6 {
     font-weight: 400;
+}
+
+.linkbox h6.theme4 {
+    padding: 0;
+    padding-top: .3em;
+    color: #8CEAEB;
+    font-family: "Press Start 2P", cursive;
+    font-size: .7em;
 }
 
 .link:hover {
@@ -593,6 +693,13 @@ a.theme3 {
     border-radius: .3em;
 }
 
+.ass img.theme4 {
+    box-shadow: #00000042 9px 9px 10px;
+    border-radius: .5em;
+    background-color: #70002d6f;
+    border: #70002d45 .1em solid;    
+}
+
 .flexbox.flexcolor {
     display: flex;
     justify-content: center;
@@ -629,6 +736,15 @@ a.theme3 {
     box-shadow: #00000042 9px 9px 10px;
 }
 
+.colorbox.theme4 {
+    border: none;
+    padding: .5em;
+    background-color: #70002d6f;
+    border: #70002d45 .1em solid;
+    border-radius: .5em;
+    box-shadow: #00000042 9px 9px 10px;
+}
+
 .colorbox h6 {
     margin: 0;
     text-align: center;
@@ -637,6 +753,11 @@ a.theme3 {
 
 .colorbox h6.theme3 {
     border: none;
+}
+
+.colorbox h6.theme4 {
+    border: none;
+    color: #8CEBEE;
 }
 
 .themeButton.theme1 {
@@ -649,9 +770,19 @@ a.theme3 {
     text-shadow: .1em .1em .2em black;
 }
 
+.themeButton.theme4 {
+    background-color: #123a4296;
+    text-shadow: .1em .1em .2em black;
+    border-radius: .5em;
+}
+
 .colors {  
     height: 3em;
     width: 100%;
+}
+
+.colors.theme4 {
+    border-radius: .5em;
 }
 
 .heritage {
@@ -694,8 +825,21 @@ a.theme3 {
     border-radius: .3em;
 }
 
+.contacts.theme4 {
+    background-color: #FF0567;
+    border-radius: 1em;
+    box-shadow: inset 0em .5em 1em 0em #0000005e;
+    margin-right: .5em;
+}
+
 .contacts a.theme3 {
     background-color: transparent;
+}
+
+
+.contacts a.theme4 {
+    background-color: transparent;
+    padding: .3em;
 }
 
 .contacts h5.theme1 {
@@ -708,6 +852,11 @@ a.theme3 {
     text-shadow: .1em .1em .2em black;
 }
 
+.contacts h5.theme4 {
+    color: #8CEAEB;
+    background-color: transparent;
+    text-shadow: .1em .1em .5em black;
+}
 
 footer h4.theme3 {
     background-color: #310b22;
@@ -717,6 +866,9 @@ footer h4.theme3 {
     text-shadow: .1em .1em .2em black;
 }
 
+footer h4.theme4 {
+    color: #123a42;
+}
 
 .synaptic {
     font-family: 'Mona Sans';
