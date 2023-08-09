@@ -899,6 +899,11 @@ footer h4.theme4 {
     margin-bottom: -3.078em;
 }
 
+.donzo {
+    position: relative;
+}
+
+
 @media only screen and (max-width: 768px) {
     .mainLogo {
         transform: scale(3.4) translateY(50%);
