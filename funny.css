@@ -393,6 +393,7 @@ p.theme4 {
     margin: 1em;
     text-align: center;
     padding: calc(.200em + .5vw);
+    text-shadow: white 1.2px 1.2px 0px, black 3px 3px 0;
 }
 
 .title.theme1 {
@@ -401,6 +402,7 @@ p.theme4 {
     border: .14em #A8CD23 solid;
     border-radius: .3em;
     box-shadow: 0 0 .5em 0em #A8CD23, inset 0 0 .5em 0em #A8CD23;
+    text-shadow: black 1.2px 1.2px 0px, #A8CD23 3px 3px 0;
 }
 
 .title.theme1:hover {
@@ -414,6 +416,7 @@ p.theme4 {
     color: #A8CD23;
     border-radius: .3em;
     box-shadow: #00000042 9px 9px 10px;
+    text-shadow: black 1.5px 1.5px 0px, #A8CD23 3px 3px 0, black 4.5px 4.5px 0, #a8cd23 6px 6px 0;
 }
 
 .title.theme4 {
