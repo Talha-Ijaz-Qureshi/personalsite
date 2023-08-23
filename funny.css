@@ -81,6 +81,7 @@ h6.themeButton {
 .themeButton:active{
     background-color: black;
     color: white;
+    cursor: grabbing;
 }
 
 
@@ -817,6 +818,10 @@ a.theme4 {
 
 .classic {
     background-image: linear-gradient(to right, black 40%, white);
+}
+
+.contacts {
+    background-color: black;
 }
 
 .contacts.theme1 {
