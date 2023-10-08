@@ -1,17 +1,16 @@
 const blurboxDiv = document.getElementById('blurbox');
-const logoimage = document.getElementById('mainLogo')
+const logoimage = document.getElementById('mainLogo');
 function hideBlurbox() {
-    blurboxDiv.classList.toggle('hidden')
+    blurboxDiv.classList.toggle('hidden');
     logoimage.style.width = '10em';
     logoimage.style.transform='scale(1) translateY(0%)';
     blurboxDiv.style.backgroundColor= '#00000000';
 }
 
-setTimeout(hideBlurbox, 500);
+setTimeout(hideBlurbox, 700);
 setTimeout(() => {
     blurboxDiv.style.zIndex= "-100";
-
-}, 1000);
+}, 1400);
 
 const buttons = document.getElementsByClassName('themeButton');
 const elements = document.querySelectorAll('body, h1, h2, h3, h4, h5, h6, p, div, a, img, footer'); // Add other elements here
