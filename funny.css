@@ -207,6 +207,7 @@ footer img  {
 .subheading.theme1 {
     background-image: linear-gradient(to right, #f2543f, #2d13d3);
     -webkit-background-clip: text;
+    background-clip: text;
     font-family: 'Major Mono Display', monospace;
     -webkit-text-fill-color: transparent;
     border: .14em #A8CD23 solid;
