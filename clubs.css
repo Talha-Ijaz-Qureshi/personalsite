@@ -1,0 +1,488 @@
+.room {
+    color: white;
+    height: 5em;
+    width: 6em;
+    border: .1em white solid;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room h5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: .5em;
+    padding: .2em;
+}
+
+.room h3 {
+    border: none;
+    padding: 0;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.room.large {
+    width: 12em;
+
+}
+
+.room.larger {
+    width: 15em;
+
+}
+
+.room.thin {
+    width: 3em;
+    border-top: none;
+    border-bottom: none;
+    transform: translateX(.25em);
+}
+
+.room.thin::after {
+    content: 'oo';
+    color: black;
+    user-select: none;
+    position: absolute;
+    border: .1em white solid;
+    height: 109%;
+    z-index: 10;
+    border-top: none;
+    width: 100%;
+    border-bottom: none;
+}
+
+.room.filler{
+    width: 2em;
+    border: none;
+    color: black;
+}
+
+.room.na {
+    width: 5.6em;
+    border-left: none;
+    border-right: none;
+}
+
+.room.mod {
+    width: 8em;
+}
+.grid1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 1em;
+}
+
+.grid3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 1em;
+}
+
+
+.yr12 {
+    width: fit-content;
+}
+
+.grid2 {
+    width: 100%;
+    border-top: .1em solid white;
+    border-bottom: .1em solid white;
+    margin-top: 1em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.grid2 h4 {
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.grid2::before {
+    width: 4em;
+    content: 'non';
+    color: black;
+    position: absolute;
+    height: 2em;
+    background-color: black;
+    transform: translateY(10px);
+}
+
+.grid4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    border-top: .1em white solid;
+}
+.grid4::before {
+    width: 4em;
+    content: 'non';
+    color: black;
+    position: absolute;
+    height: 2em;
+    background-color: black;
+    transform: translateY(10px);
+}
+
+.gridarrays {
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+}
+
+.array1, .array2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap: 1em;
+
+    height: 100%;
+}
+
+.gridarrays::after {
+    content: 'corridor';
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    inset: 50%;
+    translate: -55% -50%;
+    border-right: .1em white solid;
+    border-left: .1em solid white;
+    margin: 1em;
+}
+
+.boxing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.aboutTal.fade {
+    opacity: .7;
+}
+
+@media only screen and (max-width: 1090px) {
+    .room {
+        color: black;
+        height: 3.25em;
+        width: 3.9em;
+        border: .1em white solid;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .room h5 {
+        position: absolute;
+        top: -1em;
+        left: -1em;
+        font-size: 0.45em;
+        padding: 0;
+        padding-left: .3em;
+        box-shadow: 5px 5px 5px black;
+    }
+    
+    .room h3 {
+        border: none;
+        padding: 0;
+        font-size: 1.75em;
+        margin: 0;
+        
+    }
+    
+    .room.large {
+        width: 7.8em;
+    }
+    
+    .room.larger {
+        width: 9.75em;
+    }
+    
+    .room.thin {
+        width: 1.95em;
+        border-top: none;
+        border-bottom: none;
+
+    }
+    
+    .room.filler {
+        width: 1.3em;
+        border: none;
+        color: black;
+    }
+    
+    .room.na {
+        width: 3.64em;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .room.mod {
+        width: 5.2em;
+    }
+    
+    .grid1,
+    .grid3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3em;
+        margin: 0.65em;
+    }
+    
+    .yr12 {
+        width: fit-content;
+    }
+    
+    .grid2 {
+        width: 100%;
+        border-top: .1em solid white;
+        border-bottom: .1em solid white;
+        margin-top: 0.65em;
+        height: 1.3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .grid2 h4 {
+        padding: 0;
+        margin: 0;
+        z-index: 10;
+    }
+    
+    .grid2::before,
+    .grid4::before {
+        width: 2.6em;
+        content: 'non';
+        color: black;
+        position: absolute;
+        height: 1.3em;
+        background-color: black;
+        transform: translateY(6.5px);
+    }
+    
+    .grid4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        border-top: .1em white solid;
+    }
+    
+    .gridarrays {
+        padding: 0.65em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        height: fit-content;
+    }
+    
+    .array1,
+    .array2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        gap: 0.65em;
+        height: 100%;
+    }
+    
+    .gridarrays::after {
+        content: 'corridor';
+        width: 19.5%;
+        height: 100%;
+        position: absolute;
+        inset: 50%;
+        translate: -55% -50%;
+        border-right: .1em white solid;
+        border-left: .1em solid white;
+        margin: 0.65em;
+    }
+    }
+
+
+@media only screen and (max-width: 700px) {
+    .room {
+        color: white;
+        height: 1.75em;
+        width: 2.1em;
+        border: .1em white solid;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .room h5 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.175em;
+        padding: 0.07em;
+        display: none;
+    }
+    .room.na h5 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.3em;
+        padding: 0.07em;
+        display: block;
+    }    
+    
+    .room h3 {
+        border: none;
+        padding: 0;
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    .room.large {
+        width: 3.5em;
+    }
+    
+    .room.larger {
+        width: 5.25em;
+    }
+    
+    .room.thin {
+        width: 1.05em;
+        border-top: none;
+        border-bottom: none;
+        translate: -10% 0;
+    }
+    
+    .room.filler {
+        width: 0.8em;
+        border: none;
+        color: black;
+    }
+    
+    .room.na {
+        width: 1.82em;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .room.mod {
+        width: 2.8em;
+    }
+    
+    .grid1,
+    .grid3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.65em;
+        margin: 0.325em;
+    }
+    
+    .yr12 {
+        width: fit-content;
+    }
+    
+    .grid2 {
+        width: 100%;
+        border-top: .1em solid white;
+        border-bottom: .1em solid white;
+        margin-top: 0.325em;
+        height: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .grid2 h4 {
+        padding: 0;
+        margin: 0;
+        z-index: 10;
+        font-size: .7em;
+    }
+    
+    .grid2::before,
+    .grid4::before {
+        width: 1.3em;
+        content: 'non';
+        color: black;
+        position: absolute;
+        height: 0.65em;
+        background-color: black;
+        transform: translateY(5px);
+    }
+    
+    .grid4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        border-top: .1em white solid;
+    }
+    
+    .grid4::before {
+        width: 1.3em;
+        content: 'non';
+        color: black;
+        position: absolute;
+        height: 0.65em;
+        background-color: black;
+        transform: translateY(0px);
+    }
+    
+    .gridarrays {
+        padding: 0.325em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        height: fit-content;
+    }
+    
+    .array1, .array2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        gap: 0.325em;
+        height: 100%;
+    }
+    
+    .gridarrays::after {
+        content: 'corridor';
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        inset: 50%;
+        translate: -55% -50%;
+        border-right: .1em white solid;
+        border-left: .1em solid white;
+        margin: 0.325em;
+    }
+}
