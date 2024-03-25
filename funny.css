@@ -504,6 +504,7 @@ p.theme4 {
     margin: 1em 0 1em 0;
 }
 
+
 .card.theme3 {
     background-color: #310b22;
     border: none;
@@ -513,7 +514,7 @@ p.theme4 {
 
 .card h6 {
     font-weight: 400;
-    width: 15.85em;
+    width: 15.875em;
 }
 
 .card h6.theme3 {
@@ -549,7 +550,7 @@ p.theme4 {
 
 
 .link {
-    width: 113%;
+    width: 16em;
     background-color: white;
     color: black;
     text-align: center;
@@ -621,6 +622,33 @@ a.theme4 {
 
 .link:hover {
     text-decoration: underline;
+}
+
+.niggatron {
+    flex-direction: row;
+    width: fit-content;
+}
+
+
+.left, .right {
+    width: fit-content;
+    height: fit-content;
+}
+
+.left {
+    margin-right: 1em;
+}
+
+.right {
+    margin-left: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cnnimg {
+    width: 17em;
 }
 
 .bruhcorp, .sauron {
