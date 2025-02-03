@@ -13,6 +13,15 @@
     transition: 300ms;
 }
 
+@font-face {
+    font-family: "Frasa";
+    src: url("/somestuff/Frasa-Regular.ttf") format("woff2"),
+         url("/somestuff/Frasa-Regular.ttf/Frasa-Regular.woff") format("woff"),
+         url("/somestuff/Frasa-Regular.ttf/Frasa-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+  
 :root {
     --smooth-anim: cubic-bezier(0.2, 0, 0.001, 1);
     --green: #a8cd23;
@@ -76,6 +85,11 @@ body.theme3 {
     color: #A8CD23;
 }
 
+.occB {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
 
 body.theme4 {
     background-color: #FF0567;
@@ -155,6 +169,11 @@ h6.themeButton {
     color: #A8CD23;
 }
 
+.itifaq {
+    font-family: "Frasa";
+    -webkit-text-stroke: .05em white;
+}
+
 footer {
     height: fit-content;
     padding: 1em 0 1em 0;
@@ -198,6 +217,7 @@ footer.theme4 {
     justify-content: center;
     align-items: center;
     background-color: white;
+    padding-right: .5em;
 }
 
 footer img  {
